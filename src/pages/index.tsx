@@ -12,6 +12,45 @@ const Home: NextPage = () => {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<h2>Etsh</h2>
+			<h3>Hi, I am a UX Designer & NextJs Developer from Cairo</h3>
+			<div>
+				<div>Project 1</div>
+				<div>Project 2</div>
+				<div>Project 3</div>
+				<div>Project 4</div>
+				<div>Project 5</div>
+				<div>Project 6</div>
+			</div>
+			<div>
+				<h4>About</h4>
+				<p>
+					I develop and design applications for the web. I’m
+					passionate about web apps that provides a great experience
+					for users.
+				</p>
+			</div>
+			<div>
+				<h4>Writing</h4>
+				<div>
+					<div>
+						<div>Title</div>
+						<p>Description</p>
+					</div>
+					<div>
+						<div>Title</div>
+						<p>Description</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h4>Connect</h4>
+				<div>
+					<div>Email</div>
+					<div>Twitter</div>
+					<div>Github</div>
+				</div>
+			</div>
 		</div>
 	);
 };
