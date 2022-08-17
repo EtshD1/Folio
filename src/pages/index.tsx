@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Article from "../components/article";
+import Section from "../components/section";
+import Showcase from "../components/showcase";
+import styles from "./../styles/main.module.scss";
 
 const Home: NextPage = () => {
 	return (
-		<div>
+		<div className={styles.container}>
 			<Head>
 				<title>Design and Build Web apps with Etsh</title>
 				<meta
@@ -12,37 +16,28 @@ const Home: NextPage = () => {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<h2>Etsh</h2>
-			<h3>Hi, I am a UX Designer & NextJs Developer from Cairo</h3>
-			<div>
-				<div>Project 1</div>
-				<div>Project 2</div>
-				<div>Project 3</div>
-				<div>Project 4</div>
-				<div>Project 5</div>
-				<div>Project 6</div>
+			<div className={styles.hero}>
+				<h2 className={styles.name}>Etsh</h2>
+				<h3>
+					Hi, I am a{" "}
+					<span className={styles.design}>UX Designer</span> &{" "}
+					<span className={styles.develop}>NextJs Developer</span>{" "}
+					from Cairo
+				</h3>
 			</div>
-			<div>
-				<h4>About</h4>
+			<Showcase />
+			<Section title="About">
 				<p>
 					I develop and design applications for the web. I’m
 					passionate about web apps that provides a great experience
 					for users.
 				</p>
-			</div>
-			<div>
-				<h4>Writing</h4>
+			</Section>
+			<Section title="Writing">
 				<div>
-					<div>
-						<div>Title</div>
-						<p>Description</p>
-					</div>
-					<div>
-						<div>Title</div>
-						<p>Description</p>
-					</div>
+					<Article title="Title" description="Description" />
 				</div>
-			</div>
+			</Section>
 			<div>
 				<h4>Connect</h4>
 				<div>

@@ -1,0 +1,7 @@
+.showcase {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	grid-template-rows: 1fr 1fr;
+	padding: 3rem 0;
+}
