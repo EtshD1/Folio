@@ -57,6 +57,12 @@
 	gap: 1rem;
 }
 
+.articles {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
 @keyframes gradientRotate {
 	0% {
 		background-position: 0% 50%;

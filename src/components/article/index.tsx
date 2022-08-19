@@ -1,3 +1,5 @@
+import styles from "./styles.module.scss";
+
 interface Props {
 	title: string;
 	description: string;
@@ -5,7 +7,7 @@ interface Props {
 
 const Article = ({ title, description }: Props) => {
 	return (
-		<div>
+		<div className={styles.article}>
 			<div>{title}</div>
 			<p>{description}</p>
 		</div>
