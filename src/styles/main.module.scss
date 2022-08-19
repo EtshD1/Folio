@@ -2,6 +2,8 @@
 
 .container {
 	padding: 2rem 1.25rem;
+	width: min(100%, 792px);
+	margin: 0 auto;
 }
 
 .hero {
@@ -15,11 +17,15 @@
 		font-size: 1.25rem;
 		font-weight: bold;
 		text-align: center;
+		position: relative;
+		animation: showDown 0.5s ease forwards;
 	}
 
 	h3 {
 		text-align: center;
 		font-size: 1.5rem;
+		position: relative;
+		animation: showUp 0.5s ease forwards;
 
 		.develop {
 			background: linear-gradient(
@@ -47,7 +53,7 @@
 			-webkit-background-clip: text;
 			background-size: 400% 400%;
 			background-clip: text;
-			animation: gradientRotate 15s ease infinite alternate;
+			animation: gradientMotion 15s ease infinite alternate;
 		}
 	}
 }
@@ -63,7 +69,14 @@
 	gap: 1rem;
 }
 
-@keyframes gradientRotate {
+.meDescription,
+.connections,
+.articles {
+	position: relative;
+	animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes gradientMotion {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -72,5 +85,38 @@
 	}
 	100% {
 		background-position: 0% 50%;
+	}
+}
+
+@keyframes showDown {
+	0% {
+		top: -0.675rem;
+		opacity: 0;
+	}
+	100% {
+		top: 0rem;
+		opacity: 1;
+	}
+}
+
+@keyframes showUp {
+	0% {
+		top: 1rem;
+		opacity: 0;
+	}
+	100% {
+		top: 0rem;
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	0% {
+		left: 1rem;
+		opacity: 0;
+	}
+	100% {
+		left: 0rem;
+		opacity: 1;
 	}
 }

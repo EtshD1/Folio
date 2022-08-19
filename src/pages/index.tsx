@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 			</div>
 			<Showcase />
 			<Section title="About">
-				<p>
+				<p className={styles.meDescription}>
 					I develop and design applications for the web. I’m
 					passionate about web apps that provides a great experience
 					for users.
