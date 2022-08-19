@@ -52,6 +52,11 @@
 	}
 }
 
+.connections {
+	display: flex;
+	gap: 1rem;
+}
+
 @keyframes gradientRotate {
 	0% {
 		background-position: 0% 50%;

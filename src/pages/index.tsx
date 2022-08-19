@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Article from "../components/article";
+import ConnectionLink from "../components/ConnectLink";
 import Section from "../components/section";
 import Showcase from "../components/showcase";
 import styles from "./../styles/main.module.scss";
@@ -38,14 +39,13 @@ const Home: NextPage = () => {
 					<Article title="Title" description="Description" />
 				</div>
 			</Section>
-			<div>
-				<h4>Connect</h4>
-				<div>
-					<div>Email</div>
-					<div>Twitter</div>
-					<div>Github</div>
+			<Section title="Connect">
+				<div className={styles.connections}>
+					<ConnectionLink text="Github" href="*" />
+					<ConnectionLink text="Twitter" href="*" />
+					<ConnectionLink text="Email" href="*" />
 				</div>
-			</div>
+			</Section>
 		</div>
 	);
 };

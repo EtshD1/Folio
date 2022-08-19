@@ -4,4 +4,13 @@
 	gap: 1rem;
 	grid-template-rows: 1fr 1fr;
 	padding: 3rem 0;
+
+	.item {
+		height: calc(((100vw - 2.5rem) - 2rem) / 3);
+		background-color: #f66060;
+		border-radius: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
